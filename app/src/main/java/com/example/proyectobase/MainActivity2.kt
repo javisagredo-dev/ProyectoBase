@@ -18,12 +18,20 @@ class MainActivity2 : AppCompatActivity() {
         val mensajeBienvenida: TextView = findViewById(R.id.tx_bienvenida)
         val usuarioDesdeOtroActivity = intent.getStringExtra("sesion")
         val btnFormulario : Button = findViewById(R.id.btn_formulario)
+        val btnCalculadora: Button = findViewById(R.id.btn_calculadora)
 
         mensajeBienvenida.text= usuarioDesdeOtroActivity.toString()
         btnFormulario.setOnClickListener {
             val nuevaVentana = Intent(this, MainActivity3::class.java)
             startActivity(nuevaVentana)
         }
+
+        btnCalculadora.setOnClickListener {
+            val ventanaCalculadora = Intent(this, MainActivity4::class.java)
+            startActivity(ventanaCalculadora)
+        }
+
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

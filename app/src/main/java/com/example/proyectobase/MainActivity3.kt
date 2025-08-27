@@ -18,13 +18,6 @@ class MainActivity3 : AppCompatActivity() {
         val edNombre: EditText = findViewById(R.id.ed_nombre3)
         val edPassword: EditText = findViewById(R.id.ed_pass3)
         val edDate: EditText = findViewById(R.id.ed_date3)
-
-
-
-
-
-
-
         val btnGuardar: Button = findViewById(R.id.btn_guardar)
 
 

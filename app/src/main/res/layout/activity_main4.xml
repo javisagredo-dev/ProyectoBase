@@ -5,14 +5,29 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity4">
 
-    <TextView
-        android:id="@+id/tx_bienvenida"
+    <EditText
+        android:id="@+id/ed_A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="90px"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.323" />
+
+    <EditText
+        android:id="@+id/ed_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -21,28 +36,27 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
-        android:id="@+id/btn_formulario"
+        android:id="@+id/btn_accion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FORMULARIO"
+        android:text="Accion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.701" />
+        app:layout_constraintVertical_bias="0.704" />
 
-    <Button
-        android:id="@+id/btn_calculadora"
+    <TextView
+        android:id="@+id/tx_calculadora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ir a calculadora"
+        android:text="Calculadora"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.836" />
-
-
+        app:layout_constraintVertical_bias="0.092" />
 </androidx.constraintlayout.widget.ConstraintLayout>
